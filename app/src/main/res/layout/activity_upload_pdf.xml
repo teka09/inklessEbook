@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:gravity="center"
+    tools:context="com.devs.celtica.inkless.Publications.UploadPdf">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8.8"/>
+
+
+
+        <!-- div formulaire new pdf 1 -->
+        <ScrollView
+            android:id="@+id/uploadPdf_form1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:alpha="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_insc_form">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_inp">
+
+                           <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font1"
+                            android:textColor="@color/Black"
+                            android:textSize="23sp"
+                            android:text="رفع كتـاب"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="rtl"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/font1"
+                                android:textColor="@color/Black"
+                                android:textSize="17sp"
+                                android:text="@string/uploadBook_resume"/>
+                            <TextView
+                                android:id="@+id/uploadPdf_resumeButt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="-11dp"
+                                android:minHeight="30dp"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:background="@drawable/valider_butt_bg"
+                                android:fontFamily="@font/font1"
+                                android:textColor="@color/Black"
+                                android:textSize="16sp"
+                                android:text="@string/uploadBook_upload"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="rtl"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/font1"
+                                android:textColor="@color/Black"
+                                android:textSize="17sp"
+                                android:text="@string/uploadBook_pdfComplet"/>
+                            <TextView
+                                android:id="@+id/uploadPdf_bookButt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="30dp"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:background="@drawable/valider_butt_bg"
+                                android:fontFamily="@font/font1"
+                                android:lineSpacingExtra="-11dp"
+                                android:textColor="@color/Black"
+                                android:textSize="16sp"
+                                android:text="@string/uploadBook_upload"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:padding="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_inp">
+
+                        <!-- input category de book -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_inp"
+                            android:layoutDirection="rtl">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:fontFamily="@font/font1"
+                                android:textColor="@color/Black"
+                                android:textSize="17sp"
+                                android:text="@string/uploadBook_category"
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Gray"/>
+                            <TextView
+                                android:id="@+id/uploadPdf_category"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="40dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/font1"
+                                android:gravity="center|right"
+                                android:imeOptions="actionNext"
+                                android:layout_marginRight="15dp"
+                                android:background="@android:color/transparent"
+                                android:lineSpacingExtra="-8dp"
+                                android:textSize="20sp"
+                                android:textColor="@color/AppColor"
+                                android:textColorHint="@color/Black"
+                                android:hint="@string/uploadBook_categoryChoice"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="10dp"
+                                android:src="@drawable/dropdown_menu"
+                                />
+                        </LinearLayout>
+
+                        <!-- input titre 1 de book -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_inp"
+                            android:layoutDirection="rtl">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:fontFamily="@font/font1"
+                                android:textColor="@color/Black"
+                                android:textSize="17sp"
+                                android:text="@string/uploadBook_titre1"
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Gray"/>
+                            <EditText
+                                android:id="@+id/uploadPdf_titre1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="40dp"
+                                android:fontFamily="@font/font1"
+                                android:gravity="center|right"
+                                android:imeOptions="actionNext"
+                                android:layout_marginRight="15dp"
+                                android:background="@android:color/transparent"
+                                android:lineSpacingExtra="-8dp"
+                                android:textSize="20sp"
+                                android:textColor="@color/AppColor"
+                                android:textColorHint="@color/Black"
+                                android:hint="************"
+                                />
+                        </LinearLayout>
+
+                        <!-- input titre 2 de book -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_inp"
+                            android:layoutDirection="rtl">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:fontFamily="@font/font1"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp"
+                                android:text="@string/uploadBook_titre2"
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Gray"/>
+                            <EditText
+                                android:id="@+id/uploadPdf_titre2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="40dp"
+                                android:fontFamily="@font/font1"
+                                android:gravity="center|right"
+                                android:imeOptions="actionNext"
+                                android:layout_marginRight="15dp"
+                                android:background="@android:color/transparent"
+                                android:lineSpacingExtra="-8dp"
+                                android:textSize="20sp"
+                                android:textColor="@color/AppColor"
+                                android:textColorHint="@color/Black"
+                                android:hint="*************"
+                                />
+                        </LinearLayout>
+
+                        <!-- input photo de book -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_inp"
+                            android:layoutDirection="rtl">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:fontFamily="@font/font1"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp"
+                                android:text="@string/uploadBook_photo"
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Gray"/>
+                            <TextView
+                                android:id="@+id/uploadPdf_photoButt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="30dp"
+                                android:fontFamily="@font/font1"
+                                android:gravity="center"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/valider_butt_bg"
+                                android:lineSpacingExtra="-8dp"
+                                android:textSize="20sp"
+                                android:textColor="@color/AppColor"
+                                android:textColorHint="@color/Black"
+                                android:hint="@string/uploadBook_upload"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/font1"
+                            android:textColor="@color/Black"
+                            android:textSize="17sp"
+                            android:text="@string/uploadBook_desc"/>
+
+                        <!-- input description  de book -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:padding="5dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_inp"
+                            android:layoutDirection="rtl">
+
+
+
+                            <EditText
+                                android:id="@+id/uploadPdf_bookDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="90dp"
+                                android:fontFamily="@font/font1"
+                                android:gravity="right"
+                                android:imeOptions="actionNext"
+                                android:background="@android:color/transparent"
+                                android:lineSpacingExtra="-8dp"
+                                android:textSize="20sp"
+                                android:textColor="@color/AppColor"
+                                android:textColorHint="@color/Black"
+                                android:hint="************************************************************"
+                                />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/uploadPdf_nextButt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/valider_butt_bg"
+                            android:fontFamily="@font/font1"
+                            android:textSize="25sp"
+                            android:text="@string/uploadBook_next"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+        <!-- div formulaire new pdf 2 -->
+        <LinearLayout
+            android:id="@+id/uploadPdf_form2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:alpha="0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_insc_form">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:gravity="center"
+                android:background="@drawable/bg_inp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl">
+                    <CheckBox
+                        android:id="@+id/uploadPdf_hasPdfPaper"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:fontFamily="@font/font1"
+                        android:layoutDirection="rtl"
+                        android:checked="true"
+                        android:button="@android:color/transparent"
+                        android:textColor="@color/Black"
+                        android:background="@drawable/custom_radio"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/Black"
+                        android:textSize="17sp"
+                        android:text="@string/uploadBook_hasPaper"/>
+                </LinearLayout>
+
+
+
+                <!-- input titre 1 de book -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_inp"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/Black"
+                        android:textSize="17sp"
+                        android:text="@string/uploadBook_prixPaper"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/Gray"/>
+                    <EditText
+                        android:id="@+id/uploadPdf_prixPaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:fontFamily="@font/font1"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:lineSpacingExtra="-8dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/AppColor"
+                        android:textColorHint="@color/Black"
+                        android:hint="************"
+                        />
+                </LinearLayout>
+
+                <!-- input titre 2 de book -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_inp"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:fontFamily="@font/font1"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp"
+                        android:text="@string/uploadBook_prixPdf"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/Gray"/>
+                    <EditText
+                        android:id="@+id/uploadPdf_prixPdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:fontFamily="@font/font1"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionNext"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:lineSpacingExtra="-8dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/AppColor"
+                        android:textColorHint="@color/Black"
+                        android:hint="*************"
+                        />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/font1"
+                    android:textColor="@color/Black"
+                    android:textSize="17sp"
+                    android:text="@string/uploadBook_maisonEdition"/>
+
+                <EditText
+                    android:id="@+id/uploadPdf_maisonEdition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:fontFamily="@font/font1"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_inp"
+                    android:lineSpacingExtra="-8dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/AppColor"
+                    android:textColorHint="@color/Black"
+                    android:hint="**************************"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/font1"
+                    android:textColor="@color/Black"
+                    android:textSize="17sp"
+                    android:text="@string/uploadBook_isbn"/>
+
+                <EditText
+                    android:id="@+id/uploadPdf_isbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:fontFamily="@font/font1"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_inp"
+                    android:lineSpacingExtra="-8dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/AppColor"
+                    android:textColorHint="@color/Black"
+                    android:hint="**************************"
+                    />
+
+
+                <Button
+                    android:id="@+id/uploadPdf_publier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/valider_butt_bg"
+                    android:fontFamily="@font/font1"
+                    android:textSize="25sp"
+                    android:text="@string/uploadBook_valider"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8.8"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

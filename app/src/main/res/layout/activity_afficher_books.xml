@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context="com.devs.celtica.inkless.Users.Profile">
+
+    <fragment
+        android:name="com.devs.celtica.inkless.HeaderFrag"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WhiteTrans">
+
+        <android.support.v7.widget.RecyclerView class="android.support.v7.app.AlertController$RecycleListView"
+            android:id="@+id/affichBook_divAffich"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="57dp"
+            android:layout_marginTop="20dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+        <!-- Bottom Menu -->
+        <fragment
+            android:name="com.devs.celtica.inkless.BottiomMenu"
+            android:id="@+id/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

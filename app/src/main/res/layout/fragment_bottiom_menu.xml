@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Bottom Menu -->
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".BottiomMenu"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:padding="8dp"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal"
+    android:background="@color/BleuNuit">
+
+
+    <LinearLayout
+        android:id="@+id/bottom_menu_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/user2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:text="@string/profile_user"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_menu_stat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/stat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:text="@string/profile_bestSel"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_menu_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/loop"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:text="@string/profile_search"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_menu_saving"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/prize"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:text="@string/profile_saves"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_menu_accueil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/home"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:text="@string/profile_home"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

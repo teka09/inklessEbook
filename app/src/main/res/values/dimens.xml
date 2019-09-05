@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Dimens de Sign Up -->
+    <dimen name="signUp_inp_width"></dimen>
+</resources>

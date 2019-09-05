@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context="com.devs.celtica.inkless.Publications.SearchBook">
+
+    <fragment
+        android:name="com.devs.celtica.inkless.HeaderFrag"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="55dp"
+        android:orientation="vertical"
+        android:background="@color/WhiteTrans"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/searchBook_openDivSearchButt"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bg_butt_white">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/search_book"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font1"
+                android:textColor="@color/AppColor"
+                android:textSize="20sp"
+                android:text="@string/searchBook_hint"/>
+        </LinearLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchBook_divAffich"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+    <!-- Bottom Menu -->
+    <fragment
+        android:name="com.devs.celtica.inkless.BottiomMenu"
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        />
+
+    <!-- div de recherche .. -->
+    <LinearLayout
+        android:id="@+id/searchBook_divSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="@color/WhiteTrans">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/searchBook_serachButt"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_book"/>
+            <EditText
+                android:id="@+id/searchBook_searchInp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/font1"
+                android:hint="@string/searchBook_hint"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

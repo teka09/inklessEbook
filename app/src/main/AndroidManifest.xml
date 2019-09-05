@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.devs.celtica.inkless">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/inkless_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/inkless_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".Publications.AfficherTracks"></activity>
+        <activity android:name=".Publications.AfficherAudio" />
+        <activity android:name=".Publications.SearchBook" />
+        <activity android:name=".Publications.OpenPdf" />
+        <activity android:name=".Publications.AfficherBooks" />
+        <activity android:name=".Activities.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.SignUp" />
+        <activity android:name=".Activities.Accueil" />
+        <activity android:name=".Publications.UploadPdf" />
+        <activity android:name=".Users.Profile" />
+        <activity android:name=".Publications.ProfileBook" />
+        <activity android:name=".Publications.UploadAudio" />
+    </application>
+
+</manifest>

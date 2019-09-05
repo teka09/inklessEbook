@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layoutDirection="rtl"
+        android:background="@drawable/bg_inp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/div_addAudio_titre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/AppColor"
+            android:textSize="17sp"
+            android:textColorHint="@color/Black"
+            android:hint="@string/uploadAudio_titre"/>
+
+        <TextView
+            android:id="@+id/div_addAudio_uploadButt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lineSpacingExtra="-11dp"
+            android:minHeight="30dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:background="@drawable/valider_butt_bg"
+            android:fontFamily="@font/font1"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:text="@string/uploadBook_upload"/>
+    </LinearLayout>
+</LinearLayout>
