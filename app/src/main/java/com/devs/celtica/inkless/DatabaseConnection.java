@@ -55,7 +55,7 @@ public class DatabaseConnection extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         ContentValues values=new ContentValues();
 
-        values.put("nom1", book.id_pub);
+        values.put("id", book.id_pub);
         values.put("nom1", book.nom1);
         values.put("nom2", book.nom2);
         values.put("Photo", book.photo);
