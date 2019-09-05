@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Inkless.iml" filepath="$PROJECT_DIR$/Inkless.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InklessEbookV7.iml" filepath="$PROJECT_DIR$/InklessEbookV7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/InklessEbookV7-app.iml" filepath="$PROJECT_DIR$/app/InklessEbookV7-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/body"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:layout_marginLeft="10dp"
+            android:textSize="23sp"
+            android:textColor="@color/BleuFonce"
+            android:text="الراوي:"/>
+
+        <TextView
+            android:id="@+id/divAudio_narrator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:textSize="23sp"
+            android:textColor="@color/AppColor"
+            android:text="عبدالحميد كرمالي"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:layout_marginLeft="10dp"
+            android:textSize="23sp"
+            android:textColor="@color/BleuFonce"
+            android:text="تاريخ النشر:"/>
+
+        <TextView
+            android:id="@+id/divAudio_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:fontFamily="@font/font1"
+            android:textSize="23sp"
+            android:textColor="@color/AppColor"
+            android:text="2018-06-08 "/>
+    </LinearLayout>
+
+</LinearLayout>

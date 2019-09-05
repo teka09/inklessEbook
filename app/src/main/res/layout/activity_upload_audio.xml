@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:gravity="center"
+    tools:context="com.devs.celtica.inkless.Publications.UploadPdf">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8.8"/>
+
+
+
+        <!-- div formulaire new pdf 1 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:background="@drawable/bg_insc_form"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_inp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font1"
+                            android:textColor="@color/Black"
+                            android:textSize="23sp"
+                            android:gravity="center"
+                            android:text=" رفع كتـاب صوتي"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layoutDirection="rtl"
+                            android:visibility="gone"
+                            android:background="@drawable/bg_inp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:fontFamily="@font/font1"
+                                android:textColor="@color/Black"
+                                android:textSize="17sp"
+                                android:text="اختر الكتاب الدي سترويه من القائمة "/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="left|center"
+
+                                android:src="@drawable/dropdown_menu"/>
+                        </FrameLayout>
+
+                        <!-- Div Audio files -->
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/div_upload_audio"
+                            android:layout_width="match_parent"
+                            android:layout_height="290dp"
+                            android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+
+                        <TextView
+                           android:id="@+id/uploadAudio_addPlus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/font1"
+                            android:textSize="19sp"
+                            android:textColor="@color/Black"
+                            android:text="@string/uploadAudio_addPlus"/>
+                        <Button
+                            android:id="@+id/uploadAudio_valider"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/valider_butt_bg"
+                            android:fontFamily="@font/font1"
+                            android:textSize="25sp"
+                            android:text="@string/uploadBook_next"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8.8"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
