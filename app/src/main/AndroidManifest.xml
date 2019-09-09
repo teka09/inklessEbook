@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.devs.celtica.inkless">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="false"
         android:icon="@drawable/inkless_icon"
@@ -11,9 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".Publications.Book_offline_viewer"></activity>
-        <activity android:name=".Publications.afficher_book_offline" />
-        <activity android:name=".Publications.AfficherTracks" />
+        <activity android:name=".Publications.AfficherTracks"></activity>
         <activity android:name=".Publications.AfficherAudio" />
         <activity android:name=".Publications.SearchBook" />
         <activity android:name=".Publications.OpenPdf" />
@@ -32,8 +33,5 @@
         <activity android:name=".Publications.ProfileBook" />
         <activity android:name=".Publications.UploadAudio" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>
